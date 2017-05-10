@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Progress Bars</title>
+    <link href="CSS/example.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+  </head>
+  <body>
+  
+  
+    <div class="container">
+        <div class="progressBar" id="Progress1" name="Progress1">
+           <div class="bar" id="Bar_1"></div>
+         </div>
+        <div class="progressBar" id="Progress2">
+          <div class="bar" id="Bar_2"></div>
+        </div>
+        <div class="progressBar" id="Progress3">
+          <div class="bar" id="Bar_3"></div>
+        </div>
+       
+        <div class="selectbar-wrapper">
+            <select id="selectedBar" class="selectbar" name="selectedBar">
+                <option value="Bar_1">#Bar_1</option>
+                <option value="Bar_2">#Bar_2</option>
+                <option value="Bar_3">#Bar_3</option>
+            </select>
+       		<div class="divider"></div>
+       		<button onclick="move(10)">+10%</button>
+            <div class="divider"></div>
+            <button onclick="move(-10)">-10%</button>
+            <div class="divider"></div>
+            <button onclick="move(15)">+15%</button>
+            <div class="divider"></div> 
+            <button onclick="move(-15)">-15%</button>
+            <div class="divider"></div>
+            <button onclick="move(20)">+20%</button> 
+            <div class="divider"></div>
+            <button onclick="move(-20)">-20%</button> 
+        </div>
+        
+    </div>
+    <script src="JS/script1.js"></script>
+  </body>
+</html>
